@@ -1,6 +1,6 @@
 
 
-package collection.Immutable
+package collect.immutable
 
 object SetTest extends App {
   var jetSet = Set("Boeing", "Airbus")

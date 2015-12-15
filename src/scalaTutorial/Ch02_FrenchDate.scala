@@ -1,4 +1,4 @@
-package ScalaTutorial
+package scalaTutorial
 
 import java.util.{ Date, Locale }
 import java.text.DateFormat._

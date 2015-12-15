@@ -1,4 +1,4 @@
-package ScalaTutorial
+package scalaTutorial
 
 object fileTest extends App {
   import scala.io.Source

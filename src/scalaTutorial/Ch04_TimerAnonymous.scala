@@ -1,8 +1,8 @@
 
 
-package ScalaTutorial
+package scalaTutorial
 
-object Timer {
+object TimerAnonymous {
   def oncePerSecond(callback: () => Unit) {
     while (true) {
       callback();
@@ -10,11 +10,8 @@ object Timer {
     }
   }
 
-  def timeFiles() {
-    println("time files like an arrow...")
-  }
-
   def main(args: Array[String]) {
-    oncePerSecond(timeFiles)
+    oncePerSecond(() =>
+      println("time files like an arrow..."))
   }
 }

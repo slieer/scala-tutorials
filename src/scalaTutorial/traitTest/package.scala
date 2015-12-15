@@ -1,4 +1,4 @@
-package ScalaTutorial
+package scalaTutorial
 
 package object traitTest {
   
