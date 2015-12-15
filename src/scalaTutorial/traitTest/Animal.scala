@@ -1,4 +1,4 @@
-package ScalaTutorial.traitTest
+package scalaTutorial.traitTest
 
 abstract class Animal {
   def walk(speed: Int)

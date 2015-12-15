@@ -1,6 +1,6 @@
 
 
-package ScalaTutorial
+package scalaTutorial
 
 /**
  * Scala 程序员的平衡感

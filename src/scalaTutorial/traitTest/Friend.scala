@@ -1,4 +1,4 @@
-package ScalaTutorial.traitTest
+package scalaTutorial.traitTest
 
 trait Friend {
   val name: String

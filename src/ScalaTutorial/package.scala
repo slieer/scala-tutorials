@@ -1,5 +1,0 @@
-
-
-package object ScalaTutorial {
-  
-}

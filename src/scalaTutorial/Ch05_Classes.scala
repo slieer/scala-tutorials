@@ -1,4 +1,4 @@
-package ScalaTutorial
+package scalaTutorial
 
 class Ch05_Classes(real: Double, imaginary: Double) {
   def re() = real
