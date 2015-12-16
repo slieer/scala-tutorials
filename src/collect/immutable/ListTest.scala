@@ -1,7 +1,4 @@
-
 package collect.immutable/**不可变对象序列List*/
-
-import sun.security.util.Length
 
 object ListTest extends App {
   val oneTwo = List[Int](1, 2)

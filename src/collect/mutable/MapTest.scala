@@ -17,7 +17,10 @@ object MapTest extends App {
   x.+=(3 -> "z")
   println(x)
 
-  val x1: Map[Int, String] = new HashMap()
+//  val x1: Map[Int, String] = new HashMap()
+//  val x: HashMap[Int, String] = new HashMap[Int, String]()
+
+  println(x)
 
   import scala.collection.mutable.Map
   //import scala.collection.immutable.Map

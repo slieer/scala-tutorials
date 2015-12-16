@@ -1,5 +1,3 @@
-
-
 package collect.immutable
 
 object SetTest extends App {

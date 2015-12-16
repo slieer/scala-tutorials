@@ -35,6 +35,5 @@ object Ch04_1_Arr extends App {
   
   val numNames = Array("zero", "one", "two")
   val numNames2 = Array.apply("zero", "one", "two")
-  
-  
+    
 }
