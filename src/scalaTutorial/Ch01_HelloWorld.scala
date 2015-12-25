@@ -16,16 +16,6 @@ class HelloWorld {
 }
 
 object HelloWorld {
-  /**递归*/
-  def factorial(x: BigInt): BigInt =
-    if (x == 0) 1 else x * factorial(x - 1)
-
-  /**尾递归*/
-  def factorialTailRec(n: BigInt, acc: BigInt): BigInt = {
-    if (n <= 0) acc
-    else factorialTailRec(n - 1, acc)
-  }
-
   def scale = 5
   def scaleCalc = 7 * scale
   
@@ -53,8 +43,6 @@ object HelloWorld {
 
     var x = 10
     println("1 + 2 * 3 / x =" + 1 + 2 * 3 / x)
-
-    println("10!=" + factorial(10))
 
     var msg = "Goodbye cruel world!"
     val msgd = "Goodbye cruel world!"

@@ -24,25 +24,41 @@ object Function {
     sumF
   }
 
-  def sumInts = sum(x => x)  //val sumInts = sum(x => x)
+  def sumInts = sum(x => x) //val sumInts = sum(x => x)
   def sumSquares = sum(x => x * x) //val sumSquares = sum(x => x * x)
   def sumOther = {
-      def fint(x:Int):Int= x * (2 + x)
-      sum(fint)
+    def fint(x: Int): Int = x * (2 + x)
+    sum(fint)
   }
 
   def sumOtherV1 = sum(x => x * (2 + x))
+
+  def byName(f: => () => Unit) = {}
+  def byValue(f: () => Unit) = {}
+  def testBy = {
+    var count = 0
+    while (count < 5) {
+      byName { println(s"byName $count")
+        println }
+
+      byValue { println(s"byValue $count")
+        println }
+    }
     
+  }
+ 
   def main(args: Array[String]): Unit = {
-		println(fun(1.1))
-		
+    println(fun(1.1))
+
     def f(x: Double): Double = {
       x * x
     }
     println(valueAtOneQuarter(f))
-    
+
     println(sumInts(5, 1))
     println(sumInts(1, 10))
     println(sumInts(1, 15))
+    
+    testBy
   }
 }
