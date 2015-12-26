@@ -15,7 +15,7 @@ object FlowControl extends App {
   println("cononicalName:" + arr11.getClass.getCanonicalName)
 
   val a = Array(1, 2, 3, 4, 5)
-
+  //for 推导式
   def reArr = for (e <- a) yield e
 
   def reArr1 = for (e <- a if e > 2) yield e
