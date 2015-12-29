@@ -1,4 +1,4 @@
-package kuaixue.scala.book.type_
+package kuaixue.scala.book.chapter5
 
 class Person {
   private var name = ""
