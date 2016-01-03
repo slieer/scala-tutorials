@@ -1,0 +1,45 @@
+package com.dt.scala.dataset
+/**
+ * Author: 	Wang Jialin
+ * Contact Information:
+ * 	WeChat:	18610086859
+ *  QQ:		1740415547
+ * 	Email: 18610086859@126.com
+ *  Tel:	18610086859
+ */
+import scala.collection.mutable
+import scala.collection.mutable.TreeSet
+import scala.collection.immutable.TreeMap
+import scala.collection.immutable.HashMap
+object Set_Map {
+
+  def main(args: Array[String]) {
+    
+    val data = mutable.Set.empty[Int]
+    data ++= List(1, 2, 3)
+    data += 4;
+    data --= List(2, 3);
+    println(data)
+    data += 1;
+    println(data)
+    data.clear
+    println(data)
+    
+    val map = mutable.Map.empty[String, String]
+    map("Java") = "Hadoop"
+    map("Scala") = "Spark"
+    println(map)
+    println(map("Scala"))
+      
+    val treeSet = TreeSet(9, 3, 1, 8, 0, 2, 7, 4, 6, 5)  
+    println(treeSet)
+    val treeSetForChar = TreeSet("Spark", "Scala", "Hadoop")  
+    println(treeSetForChar)
+    
+    var treeMap = TreeMap("Scala" -> "Spark", "Java" -> "Hadoop")
+    println(treeMap)
+    
+    
+  }
+
+}

@@ -32,6 +32,7 @@ object FlowControl extends App {
   def sum1(args: Int*):Int = {
     var result = 0
     args.foreach { x => result += x }  
+    //args.foreach (result += _)
     result
   }
   
