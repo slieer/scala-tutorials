@@ -10,7 +10,7 @@ package com.dt.scala.dataset
 object ListObjectOps {
 
   def main(args: Array[String]) {
-    println(List.apply(1, 2, 3, 5))
+    println(List.apply(1, 2, 3))
 //    println(List.make(3, 5))
     println(List.range(1, 5))
     println(List.range(9, 1, -3))
