@@ -1,4 +1,4 @@
-package collect
+package kuaixue.scala.book.chapter_13
 
 import scala.reflect.io.File
 

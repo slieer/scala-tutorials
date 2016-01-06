@@ -1,4 +1,4 @@
-package collect.immutable
+package kuaixue.scala.book.chapter_13.immutable
 
 object SetTest extends App {
   var jetSet = Set("Boeing", "Airbus")

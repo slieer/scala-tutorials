@@ -1,6 +1,6 @@
 
 
-package collect.mutable
+package kuaixue.scala.book.chapter_13.mutable
 
 import scala.collection.mutable.HashMap
 import scala.collection.mutable.Map

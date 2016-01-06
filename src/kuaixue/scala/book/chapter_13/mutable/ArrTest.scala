@@ -1,6 +1,6 @@
 
 
-package collect.mutable
+package kuaixue.scala.book.chapter_13.mutable
 
 object Ch04_1_Arr extends App {
   def printArgs(args: Array[String]): Unit = {

@@ -1,4 +1,4 @@
-package collect.immutable
+package kuaixue.scala.book.chapter_13.immutable
 /**不可变对象序列List*/
 
 object ListTest extends App {
