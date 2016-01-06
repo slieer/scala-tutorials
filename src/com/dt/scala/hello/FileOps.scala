@@ -9,11 +9,11 @@ import scala.io.Source
  *  Tel:	18610086859
  */
 object FileOps {
-	def main(args: Array[String]) {
-//		val file = Source.fromFile("E:\\WangJialin.txt") 
-		val file = Source.fromURL("http://spark.apache.org/")
-		for (line <- file.getLines){
-		  println(line)
-		}
-	}
+  def main(args: Array[String]) {
+    //		val file = Source.fromFile("E:\\WangJialin.txt") 
+    val file = Source.fromURL("http://spark.apache.org/")
+    for (line <- file.getLines) {
+      println(line)
+    }
+  }
 }

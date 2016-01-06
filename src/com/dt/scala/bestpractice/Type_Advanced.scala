@@ -13,7 +13,7 @@ import scala.reflect.runtime.universe._
 class Spark
 trait Hadoop
 object Flink
-class Java{
+class Java {
   class Scala
 }
 object Type_Advanced {
@@ -21,16 +21,15 @@ object Type_Advanced {
   def main(args: Array[String]) {
     println(typeOf[Spark])
     println(classOf[Spark]) //Class[_ <: Spark]
-    
-    
+
     val spark = new Spark
-    
+
     println(classOf[Hadoop])
     println(typeOf[Hadoop])
-    
+
     println(Flink.getClass)
-//    println(classOf[Flink])
-    
+    //    println(classOf[Flink])
+
     val java1 = new Java
     val java2 = new Java
     val scala1 = new java1.Scala
@@ -40,10 +39,10 @@ object Type_Advanced {
     println(typeOf[java1.Scala] == typeOf[java2.Scala])
     println(typeOf[java1.Scala])
     println(typeOf[java2.Scala])
-    
+
     println(classOf[List[Int]] == classOf[List[String]])
     println(typeOf[List[Int]] == typeOf[List[String]])
-    
+
   }
 
 }
