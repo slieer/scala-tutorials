@@ -15,13 +15,5 @@ object ImplicitClass extends App{
   
   val a = new A
   a.rich
-  
-  def testParam(implicit name: String){
-    println(name)
-  }
-  
-  implicit val name = "Implicited !"
-  testParam
-  
-  testParam("Spark !")
+
 }
