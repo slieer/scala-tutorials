@@ -21,6 +21,17 @@ class P(name:String= "", age:Int=0, addr:String="", phone:String=""){
   
 }
 
+class NetWork(val name: String) {  
+  outer =>  
+  class Member(val name: String) {  
+    
+    def description = name + " inside " + outer.name  
+  }  
+} 
+
+
 object Person extends App{
   new P("namePlus")
+  
+
 }
