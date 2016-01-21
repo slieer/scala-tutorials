@@ -1,11 +1,13 @@
-package scalaTutorial
+package kuaixue.scala.book.chapter2
+
+import scala.math.ceil
 
 /**
  * 科里化（Currying）
  *
  *
  */
-object Function {
+object Func1 {
   import scala.math._
 
   //作为值的函数
@@ -33,7 +35,9 @@ object Function {
 
   def sumOtherV1 = sum(x => x * (2 + x))
 
-  def byName(f: => () => Unit) = {}
+  def byName(f: => () => Unit) = {
+    f
+  }
   def byValue(f: () => Unit) = {}
   def testBy = {
     var count = 0
@@ -43,6 +47,8 @@ object Function {
 
       byValue { println(s"byValue $count")
         println }
+      
+      count = count + 1
     }
     
   }

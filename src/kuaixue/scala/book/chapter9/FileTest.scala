@@ -23,12 +23,31 @@ object FileTest extends App{
 		
 		val it = source.getLines()
 		print(it) 
-		//print1(it)    
+		//print1(it)
+		
+		val lic = "LICENSE"
+		val f = new File(lic)
+		println(f.getAbsolutePath)
+		
+		if (!f.exists()) {
+			Console.err.println("filename not exist.")
+			return ;
+		}
+	  
+	  for (line <- Source.fromFile(file).getLines)
+		  println(line.length + " " + line)
   }
-  
-  
+    
   def fromNet(){
     val source1 = Source.fromURL("http://horstamnn.com", "UTF-8")
+    
+    val url = "http://www.baidu.com"
+    val in = Source.fromURL(url, "utf-8")
+    in.getLines().foreach { x =>
+      {
+        println(x)
+      }
+    }
   } 
   
   def fromStr(){
